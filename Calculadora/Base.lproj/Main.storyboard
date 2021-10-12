@@ -285,9 +285,15 @@
                                     <constraint firstItem="F6J-Nz-q3v" firstAttribute="leading" secondItem="VXG-WX-3RM" secondAttribute="leading" constant="10" id="nJQ-wD-crw"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWv-O6-Mtw">
-                                <rect key="frame" x="53" y="216" width="282" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDH-c3-wgR">
+                                <rect key="frame" x="16" y="223.33333333333334" width="332" height="71.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 + 8" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWv-O6-Mtw">
+                                <rect key="frame" x="27" y="155.33333333333334" width="321" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -296,16 +302,19 @@
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VXG-WX-3RM" secondAttribute="bottom" constant="35" id="6ua-14-hyx"/>
-                            <constraint firstItem="VXG-WX-3RM" firstAttribute="top" secondItem="uWv-O6-Mtw" secondAttribute="bottom" constant="57.666666666666742" id="D5z-61-HtU"/>
-                            <constraint firstItem="uWv-O6-Mtw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="172" id="Dsu-OR-3Ez"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uWv-O6-Mtw" secondAttribute="trailing" constant="27" id="CpG-t2-mMc"/>
                             <constraint firstItem="VXG-WX-3RM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="E5K-RO-OHi"/>
-                            <constraint firstItem="uWv-O6-Mtw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="53" id="X8L-oL-mrl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uWv-O6-Mtw" secondAttribute="trailing" constant="40" id="a7d-Hi-Mh8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cDH-c3-wgR" secondAttribute="trailing" constant="27" id="INS-vG-I9V"/>
+                            <constraint firstItem="cDH-c3-wgR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Vdu-q9-3b6"/>
+                            <constraint firstItem="cDH-c3-wgR" firstAttribute="top" secondItem="uWv-O6-Mtw" secondAttribute="bottom" constant="8" symbolic="YES" id="Z8j-O3-bHD"/>
+                            <constraint firstItem="uWv-O6-Mtw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="b95-lN-aSq"/>
+                            <constraint firstItem="VXG-WX-3RM" firstAttribute="top" secondItem="cDH-c3-wgR" secondAttribute="bottom" constant="38.670000000000002" id="g7f-CX-Z9D"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VXG-WX-3RM" secondAttribute="trailing" constant="10" id="pW6-V0-ExF"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="Display" destination="uWv-O6-Mtw" id="tvR-9J-SV9"/>
+                        <outlet property="Result" destination="cDH-c3-wgR" id="Upq-vg-a87"/>
                         <outlet property="bt0" destination="XAW-ax-y3w" id="r2E-BH-cUB"/>
                         <outlet property="bt1" destination="GjC-qe-NA8" id="Hum-Mv-GZN"/>
                         <outlet property="bt2" destination="whh-kf-a1x" id="a6w-tj-Yhl"/>
@@ -335,6 +344,9 @@
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
